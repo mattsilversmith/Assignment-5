@@ -6,25 +6,35 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body ng-app="directoryApp">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>UF Directory App</h1>
-        </div>
-        <div class="col-md-6">
-          <!-- Add a ui-sref property to the anchor tags to allow navigation between different states -->
-          <nav>
-            <ul class="nav nav-pills">
-              <li><a>List View</a></li>
-              <li><a>Map View</a></li>
-              <li><a>Create New Listing</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div ui-view></div>
-    </div>
-    <!-- Dependencies -->
+ <br>
+  <div class="boxed">
+    <form>
+      <legend> Toggle Between Different Displays: </legend>
+      <p> </p>
+      <p>
+        <input type="checkbox" name="demographic" value="demographic" id="demographic">
+        <label for="demographic"> Demographic Information &emsp; &emsp; &emsp; &emsp; &emsp;
+          </label>
+        <input type="checkbox" name="routes" value="routes" id="routes">
+        <label for="routes"> Bus Routes
+          </label>
+      </p>
+      <p>
+        <input type="checkbox" name="demographic" value="demographic" id="demographic">
+        <label for="demographic">  Travel Time Comparisons &emsp; &emsp; &emsp; &emsp; &emsp;
+          </label>
+        <input type="checkbox" name="routes" value="routes" id="routes">
+        <label for="routes"> Heat Map
+          </label>
+      </p>
+    </form>
+</div>
+
+
+
+
+
+
     <script src="/public/lib/jquery/dist/jquery.min.js"></script
     <script src="/public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/public/lib/angular/angular.js"></script>
